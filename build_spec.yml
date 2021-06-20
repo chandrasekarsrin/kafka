@@ -17,6 +17,8 @@ steps:
     command: |
       echo $testEnv
       gradle jar
+      cd build/libs
+      ls -lart
       
 outputArtifacts:
   - name: output1
