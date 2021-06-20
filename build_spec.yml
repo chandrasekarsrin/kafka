@@ -16,11 +16,11 @@ steps:
     timeoutInSeconds: 400
     command: |
       echo $testEnv
-      gradle jar
+      ./gradlew jar
       cd build/libs
       ls -lart
       
 outputArtifacts:
-  - name: output1
+  - name: kafka
     type: BINARY
-    location: build/libs/kafka-3.0.0-SNAPSHOT.jar
+    location: build/libs/b553016e6ab5f17cf73012b5bc4112ff-3.0.0-SNAPSHOT.jar
