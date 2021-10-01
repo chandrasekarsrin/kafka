@@ -18,7 +18,6 @@ steps:
       echo $testEnv
       chmod 777 ./gradlew
       ./gradlew jar
-      ./gradlew test
       cd build/libs
       ls -lart
       
